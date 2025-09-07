@@ -24,7 +24,7 @@ def ratio_in_range(arr, low, high):
   mask = (arr >= low) & (arr < high)
   return mask.mean()
 
-def array_to_prob_distribution(array):
+def array_to_prob_distribution(arr):
   bins=get_bins(arr)
   di={}
   for high, low in zip(bins[1:], bins[:-1]):
